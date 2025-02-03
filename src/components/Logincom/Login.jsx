@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
 import './Loginsign.css';
-import users_icon from '../Assets/email.png';
+import email_icon from '../Assets/email.png';
 import password_icon from '../Assets/password.png';
-import email_icon from '../Assets/person.png';
+import users_icon from '../Assets/person.png';
 
 const Login =()=> {
     const [action, setAction] = useState("Sign Up");
     
-   
+    const [type,settype] = useState("user");
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
+    const handlechange = (e)=> {
+        settype(e.target.value);
+    }
+    console.log(type)
     
     const handleSubmit = () => {
         if (action === "Sign Up") {
@@ -31,17 +35,7 @@ const Login =()=> {
             </div>
             <div className='inputs'>
 
-                {action !== "Login" && (
-                    <div className='input'>
-                        <img src={users_icon} alt=''/>
-                        <input 
-                            type='text' 
-                            placeholder='Name' 
-                            value={name} 
-                            onChange={(e) => setName(e.target.value)}
-                        />
-                    </div>
-                )}
+                
 
                 <div className='input'>
                     <img src={email_icon} alt=''/>
@@ -63,19 +57,43 @@ const Login =()=> {
                     />
                 </div>
 
-                <div className='forgot-password'>Forgot Password? <span>Click here</span></div>
-
-                <div className='submit-container'>
-                    <div 
-                        className={action === "Login" ? "submit" : "submit gray"} 
-                        onClick={() => {
-                            setAction("Login");
-                            handleSubmit();
-                        }}
-                    >
-                        Login
+                {action !== "Login" && (
+                    <>
+                   <div className='input'>
+                        <img src={users_icon} alt=''/>
+                        <input 
+                            type='text' 
+                            placeholder='Name' 
+                            value={name} 
+                            onChange={(e) => setName(e.target.value)}
+                        />
                     </div>
-                    <div 
+                    
+                    <div >
+                        <select className='input' value = {type} onChange={handlechange} style={{paddingLeft:"42%" }}>
+                            <option value='user'>User</option>
+                            <option value='restaurant'>Restaurant</option>
+                            <option value='admin'>admin</option>
+                        </select>
+                </div>
+                </>
+                )}
+
+                
+
+                <div className='logbut'>
+                    <button>Register</button>                    
+                </div>
+               
+            </div>
+        </div>
+    );
+}
+
+export default Login;
+
+
+{/* <div 
                         className={action === "Sign Up" ? "submit" : "submit gray"} 
                         onClick={() => {
                             setAction("Sign Up");
@@ -83,11 +101,4 @@ const Login =()=> {
                         }}
                     >
                         Sign Up
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-}
-
-export default Login;
+                    </div> */}

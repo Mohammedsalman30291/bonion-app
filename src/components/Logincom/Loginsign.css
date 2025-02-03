@@ -47,20 +47,23 @@
     height: 60px;
     background-color: rgba(97, 80, 190, 0.1); /* Lighter shade of primary color */
     border-radius: 7px;
+    border: 0;
+    outline: none;
 }
 
 .input img {
     margin: 0px 21px;
 }
 
-.input input {
+.input input,select {
     width: 200px;
     height: 30px;
     background: none;
     border: none;
     outline: none;
     font-size: 15px;
-    color: #D9ABAB; /* Primary color */
+    color: #7c6e6e; /* Primary color */
+    /* padding-left: 30px; */
 }
 
 .forgot-password {
@@ -103,4 +106,18 @@
     background-color: rgb(245, 245, 245); /* Matching container background */
     color: rgb(97, 80, 190); /* Primary color */
     border: 1px solid #D9ABAB; /* Primary color for border */
+}
+
+.logbut{
+    width : 150px;
+    
+    button{
+        width:100%;
+        height: 2rem;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+        border: none;
+        
+    }
 }

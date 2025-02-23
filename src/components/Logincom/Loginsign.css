@@ -1,0 +1,106 @@
+.container {
+    width: 550px;
+    display: flex;
+    margin: auto;
+    margin-top: 110px;
+    background-color: rgb(245, 245, 245); /* Soft light gray */
+    flex-direction: column;
+    padding-bottom: 30px;
+    border-radius: 15px; /* Added for a modern look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 9px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.text {
+    color: #D9ABAB; /* Primary color */
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.underline {
+    width: 90px;
+    height: 4px;
+    background-color: #D9ABAB; /* Primary color */
+    border-radius: 9px;
+}
+
+.inputs {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    background-color: rgba(97, 80, 190, 0.1); /* Lighter shade of primary color */
+    border-radius: 7px;
+}
+
+.input img {
+    margin: 0px 21px;
+}
+
+.input input {
+    width: 200px;
+    height: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #D9ABAB; /* Primary color */
+}
+
+.forgot-password {
+    font-size: 18px;
+    color: #D9ABAB; /* Primary color */
+}
+
+.forgot-password span {
+    color: rgb(78, 18, 217); /* Slightly darker shade for contrast */
+    cursor: pointer;
+}
+
+.submit-container {
+    display: flex;
+    margin: 8px auto;
+    gap: 60px;
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9ABAB; /* Primary color */
+    border-radius: 9px;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white; /* Contrast text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.submit:hover {
+    background-color: rgb(78, 18, 217); /* Darker shade on hover */
+}
+
+.gray {
+    background-color: rgb(245, 245, 245); /* Matching container background */
+    color: rgb(97, 80, 190); /* Primary color */
+    border: 1px solid #D9ABAB; /* Primary color for border */
+}

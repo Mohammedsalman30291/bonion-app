@@ -1,0 +1,78 @@
+
+
+.main {
+
+  min-width: 500px;
+  margin: 50px 10%;
+  max-width: 800px;
+  font-size: large;
+  background-color:var(--secondary);
+  padding: 3%;
+}
+
+.categoriesFlex {
+  max-width: 700px;
+  min-width: 400px;
+  height: 7rem;
+  margin: 0px 15px;
+  border-radius: 8px;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.restaurantFlex {
+    margin: 0px 15px;
+    border-radius: 12px;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+  }
+
+.category{
+  width: 20%;
+  height: 80%;
+  align-content: center;
+  border-radius: 12px;
+  text-align: center;
+  background: var(--tertiary);
+}
+
+.card{
+    justify-self: stretch;
+    height: 40%;
+    width: 40%;
+    background-color: var(--tertiary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 12px;
+    .imgcontainer{
+        background-color: rgba(0, 0, 0, 0.444);
+        height: 95%;
+        width: 50%;
+        border-radius: 7%;
+    }
+    .details{
+      width: 50%;
+      margin-left: 5%;
+
+      justify-content: left;
+      align-self: start;
+      hr{
+        border: 0;
+        margin-top: -5px;
+        height: 1px;
+        background-color: black;
+        width: 100%;
+      }
+    }
+}

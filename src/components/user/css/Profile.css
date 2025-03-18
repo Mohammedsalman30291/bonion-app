@@ -1,0 +1,32 @@
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.profile{
+    /* max-width: 50px; */
+    /* background-color:rgb(255, 255, 255); */
+}
+
+.profilecontent{
+    padding: 30px;
+}
+
+.logoutbutton{
+    padding: 10px 15px;
+    background-color: rgb(245, 24, 24);
+    border-radius: 12px;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 800px){
+    .container{
+        margin-inline: 10px;
+        
+        font-size: 0.9rem;
+        grid-template-columns: 1fr;
+    }
+}

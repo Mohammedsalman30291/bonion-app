@@ -28,7 +28,7 @@ const Login =()=> {
     };
 
     return (
-        <div className='container'>
+        <div className='containerlog'>
             <div className='header'>
                 <div className='text'>{action}</div>
                 <div className='underline'></div>

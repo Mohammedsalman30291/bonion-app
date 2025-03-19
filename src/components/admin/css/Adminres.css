@@ -1,0 +1,12 @@
+.adminmain{
+    background-color: var(--secondary);
+}
+.username{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    background-color: var(--tertiary);
+    font-size: 35px;
+
+}

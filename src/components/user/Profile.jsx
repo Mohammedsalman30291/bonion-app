@@ -17,7 +17,7 @@ const Profile = () => {
 
   return (
     <>
-      {/* <OrderDetails/> */}
+      <OrderDetails/>
       <div className="container">
         <div className="profile">
           <h2>My Profile</h2>

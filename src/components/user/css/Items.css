@@ -1,4 +1,4 @@
-.main{
+.maineit{
    display: grid;
    grid-template-columns: 1fr 5fr;
    color: var(--forgery);

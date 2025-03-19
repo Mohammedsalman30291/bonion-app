@@ -120,7 +120,7 @@ const Items = () => {
     );
 
   return (
-    <div className='main'>
+    <div className='mainit'>
       <div className="sidebar">
         <h2>Filters
         </h2>

@@ -2,8 +2,8 @@
     display: flex;
     background-color:rgb(217, 216, 185);
     flex-direction: column;
-    padding-left: 100px;
-    padding-right: 100px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
 }
 
 h2{
@@ -53,6 +53,7 @@ hr{
 .restaurantBody{
  display: flex;
  flex-wrap: wrap;
+ margin-left: 55px;
 }
 
 .restaurant{

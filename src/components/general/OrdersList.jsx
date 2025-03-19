@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import testImg from "../Assets/test.jpg"
-import "./OrdersList.css"
+import "./css/OrdersList.css"
 
 const OrdersList = () => {
     

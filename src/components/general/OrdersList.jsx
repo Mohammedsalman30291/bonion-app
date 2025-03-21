@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import testImg from "../Assets/test.jpg"
 import "./OrdersList.css"
+import OrderDetails from '../user/OrderDetails'
 
 const OrdersList = () => {
     
@@ -194,13 +195,22 @@ const OrdersList = () => {
       
     )
 
+    const [selectedOrder, setSelectedOrder] = useState(null);
+
+    const showOrderDetails= (order)=>{
+      setSelectedOrder(order);
+    }
+    const closeOrderDetails = ()=>{
+      setSelectedOrder(null);
+    }
+
   return (
         <div className='orders'>
             <h2>My Orders 
                 </h2>
                 <hr/>
             {orders.map((order)=>(
-              <div className="order" key={order._id}>
+              <div className="order" key={order._id} onClick={()=>showOrderDetails(order)}>
                     <img src={testImg}></img>
                     <div className="orderDetails">
                         <h3>{order.itemName} - {order.resName}</h3>
@@ -213,6 +223,10 @@ const OrdersList = () => {
                     </div>
                 </div>
             ))}
+
+            {
+              selectedOrder && <OrderDetails order1={selectedOrder} close={closeOrderDetails}/>
+            }
         </div>
   )
 }

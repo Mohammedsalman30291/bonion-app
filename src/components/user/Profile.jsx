@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import testImg from "../Assets/test.jpg";
 import "./css/Profile.css";
 import OrderDetails from "./OrderDetails";
-import Orders from "../general/OrdersList";
+import OrdersList from "../general/OrdersList";
 
 const Profile = () => {
   const [user, setUser] = useState({
@@ -28,7 +28,7 @@ const Profile = () => {
             <button className="logoutbutton">Logout</button>
           </div>
         </div>
-        <Orders />
+        <OrdersList />
       </div>
     </>
   );

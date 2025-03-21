@@ -2,32 +2,9 @@ import React, { useState } from 'react'
 import testImg from "../Assets/test.jpg"
 
 
-const OrderDetails = () => {
+const OrderDetails = ({order1, close}) => {
 
-    const [order, setOrder] = useState({
-              "_id": "o1",
-              "uId": "u1",
-              "uName": "Mohamed Aadhil",
-              "uEmail": "aadhildsai@gmail.com",
-              "uMobile": "1212121212",
-              "uAdd": "vettuvankeni",
-              "uPin": "600115",
-              "payMeth": "cod",
-              "itemId": "i6",
-              "itemName": "Mini Tiffin",
-              "itemPrice": 160,
-              "itemImage": "https://socialbio.in/imageurl/gamer.jpg",
-              "itemCat": "Breakfast",
-              "itemDiscount": 2,
-              "itemDescription": "Tiffin which is mini to fill full mini stomach",
-              "itemQty": 1,
-              "resId": "r3",
-              "resName": "A2B",
-              "resAdd": "vettuvankeni",
-              "oStatus": "delivered",
-              "oDate": "2019-10-08T07:42:51.861Z"
-            }  
-        );
+    const [order, setOrder] = useState( order1, null );
 
         const style = {
             ViewDetailed : {
@@ -64,6 +41,7 @@ const OrderDetails = () => {
                         <p>Total Amount: {order.itemPrice-(order.itemDiscount/100)*order.itemPrice * order.itemQty} /-</p>
                         <p>Payment Mode: {order.payMeth}</p>
                         <p>TO: {order.uAdd} - {order.uPin} ,&nbsp; Ph: {order.uMobile}</p>
+                        <button onClick={close} >close</button>
                     </div>
                 </div>
     </div>
